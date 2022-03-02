@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(24, 24, 24);
+  /* background-color: tomato; */
+  padding-bottom: 20px;
+
+  width: 100%;
+
+  color: aliceblue;
+}
+
+.gridList {
+  padding-top: 56px;
+  background-color: rgb(24, 24, 24);
+  display: grid;
+  grid-template-columns: repeat(6, 360px);
+  grid-gap: 30px 14px;
+  margin-top: 1rem;
+}
+@media only screen and (max-width: 2159px) {
+  .gridList {
+    grid-template-columns: repeat(6, 360px);
+  }
+}
+
+@media only screen and (max-width: 2506px) {
+  .gridList {
+    grid-template-columns: repeat(5, 360px);
+  }
+}
+@media only screen and (max-width: 2128px) {
+  .gridList {
+    grid-template-columns: repeat(4, 360px);
+  }
+}
+
+@media only screen and (max-width: 1750px) {
+  .gridList {
+    grid-template-columns: repeat(3, 360px);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .gridList {
+    grid-template-columns: repeat(2, 360px);
+  }
+}
+
+/* @media only screen and (max-width: 1200px) {
+  .gridList {
+    grid-template-columns: repeat(2, 360px);
+  }
+} */
+
+@media only screen and (max-width: 828px) {
+  .gridList {
+    grid-gap: 20px 10px;
+    grid-template-columns: repeat(2, 324px);
+  }
+  .gridList .gridItem {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .gridList {
+    grid-gap: 00px 10px;
+    grid-template-columns: repeat(2, 288px);
+  }
+  .gridList .gridItem {
+  }
+}
+
+@media only screen and (max-width: 592px) {
+  .gridList {
+    grid-gap: 30px 10px;
+    grid-template-columns: repeat(1, 360px);
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .gridList {
+    grid-gap: 0px 10px;
+    grid-template-columns: repeat(1, 324px);
+  }
+}

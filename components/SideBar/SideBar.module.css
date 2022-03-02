@@ -1,0 +1,108 @@
+.container {
+  background-color: rgba(33, 33, 33, 1);
+
+  width: 240px;
+  padding-right: 16px;
+  /* height: calc(100vh - 56px); */
+  height: 100%;
+  position: fixed;
+  padding-top: 56px;
+  /* top: 56px; */
+  z-index: +2;
+  overflow-y: scroll;
+}
+.otherPage {
+  animation: slidein 0.3s ease-in-out forwards;
+}
+/* -------------------------------------------------------------------------- */
+.firstRowContainer {
+  padding: 12px 0px;
+}
+.secondRowContainer {
+  margin-top: 12px;
+  padding: 12px 0px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.thirdRowContainer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 0px;
+}
+.fourthRowContainer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 0px;
+}
+.fifthRowContainer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 0px;
+}
+.sixthRowContainer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  /* padding: 12px 0px; */
+}
+.itemContainer {
+  cursor: pointer;
+  height: 40px;
+  font-size: 14px;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.itemContainer:hover {
+  background-color: rgb(54, 53, 53);
+}
+
+.svg {
+  margin-right: 24px;
+  height: 24px;
+  width: 24px;
+  fill: aliceblue;
+}
+.subPic {
+  margin-right: 24px;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
+.text {
+  width: 144px;
+}
+.bigText {
+  font-size: 16px;
+  padding: 8px 18px;
+  font-weight: 900;
+  color: rgb(159, 159, 159);
+}
+.listOfOptions {
+  padding: 16px 24px 0px 24px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  font-size: 13px;
+}
+.listOfOptions div {
+  white-space: nowrap;
+  display: flex;
+  margin-right: 8px;
+}
+.LLC {
+  font-size: 12px;
+  padding: 16px 24px;
+  color: rgb(159, 159, 159);
+}
+/* -------------------------------------------------------------------------- */
+
+@keyframes slidein {
+  from {
+    left: -20rem;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 1370px) {
+  .container {
+    animation: slidein 0.3s ease-in-out forwards;
+  }
+}

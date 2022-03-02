@@ -1,0 +1,7 @@
+.container {
+  display: grid;
+  grid-gap: 60px;
+  /* background-color: tomato; */
+  height: fit-content;
+  padding-bottom: 10rem;
+}

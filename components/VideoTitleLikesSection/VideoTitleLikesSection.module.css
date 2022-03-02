@@ -1,0 +1,133 @@
+.container {
+}
+
+.titleDateLikesContainer {
+  height: 95px;
+  /* background-color: rgb(226, 38, 38); */
+  padding-top: 20px;
+  padding-bottom: 8px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  height: 26px;
+}
+
+.viewsDateLikesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dateViewsContainer {
+  color: rgb(182, 181, 181);
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  height: 40px;
+  /* background-color: rgb(60, 61, 61); */
+}
+.viewCount {
+  padding-right: 10px;
+}
+.date {
+}
+
+.likesShareSaveContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* width: calc(354.8px); */
+  /* background-color: rgb(9, 10, 9); */
+  /* display: none; */
+}
+.thumbsUp,
+.thumbsDown,
+.share,
+.save,
+.dots {
+  fill: white;
+  height: 24px;
+  width: 24px;
+}
+.thumbsUpLikeCountContainer,
+.thumbsDownLikeCountContainer,
+.shareContainer,
+.saveContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.thumbsUpLikeCountContainer {
+}
+.thumbsDownLikeCountContainer {
+}
+.shareContainer {
+}
+.saveContainer {
+}
+.dotsContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.thumbsUp {
+}
+.dots {
+}
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 970px) {
+  .thumbsUpLikeCountContainer,
+  .thumbsDownLikeCountContainer,
+  .shareContainer,
+  .saveContainer {
+    margin-right: 8px;
+  }
+}
+
+@media only screen and (max-width: 552px) {
+  .thumbsUpLikeCountContainer,
+  .thumbsDownLikeCountContainer,
+  .shareContainer,
+  .saveContainer {
+    margin-right: 6px;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .dateViewsContainer {
+    font-size: 0.74rem;
+  }
+
+  .viewsDateLikesContainer {
+    font-size: 0.8rem;
+  }
+  .thumbsUp,
+  .thumbsDown,
+  .share,
+  .save,
+  .dots {
+    fill: white;
+    height: 20px;
+    width: 20px;
+  }
+}
+@media only screen and (max-width: 552px) {
+  .viewsDateLikesContainer {
+    /* padding-top: 10px; */
+    margin-top: 10px;
+    height: 36px;
+    flex-direction: column;
+    /* background-color: lawngreen; */
+  }
+  .likesShareSaveContainer {
+    margin-left: auto;
+  }
+  .dateViewsContainer {
+    margin-right: auto;
+    padding-bottom: 2px;
+  }
+}

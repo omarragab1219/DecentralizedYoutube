@@ -1,0 +1,33 @@
+.container0 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(33, 33, 33);
+
+  padding-top: 56px;
+}
+
+.width240px {
+  width: calc(100vw - 240px);
+}
+.width72px {
+  width: calc(100vw - 72px);
+}
+.HomePage {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1370px) {
+  .mobileWidth {
+    width: calc(100vw - 72px);
+  }
+}
+@media only screen and (max-width: 790px) {
+  .mobileWidth {
+    width: 100vw;
+  }
+}

@@ -1,0 +1,77 @@
+.container {
+  /* background-color: rgb(87, 90, 87); */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.userDescriptionSubscribeContainer {
+  /* background-color: rgb(144, 174, 238); */
+  height: 66px;
+  padding-top: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.imageCreatorSubsContainer {
+  display: flex;
+  align-items: center;
+}
+.imageContainer {
+  /* height: 48px; */
+  display: flex;
+  align-items: center;
+  width: 65px;
+}
+.image {
+  height: 48px;
+  width: 48px;
+
+  border-radius: 50%;
+}
+.creator {
+  font-size: 1.1rem;
+}
+.subs {
+  font-size: 0.78rem;
+  color: rgb(182, 181, 181);
+}
+
+.subBtn {
+  font-size: 14px;
+  border-radius: 2px;
+  color: aliceblue;
+  background-color: rgb(204, 6, 0);
+  border: none;
+  padding: 10px 16px;
+  margin: 0px 4px;
+}
+
+.descriptionContainer {
+  /* background-color: chocolate; */
+  width: 100%;
+  display: flex;
+  padding-left: 65px;
+}
+
+.description {
+  /* display: none; */
+  width: 615px;
+  padding-bottom: 16px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .description {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 486px) {
+  .description {
+    width: 250px;
+  }
+}

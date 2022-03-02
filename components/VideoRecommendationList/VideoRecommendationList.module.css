@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-gap: 12px 0px;
+  /* background-color: rgba(250, 235, 215, 0.101); */
+  width: 402px;
+  /* background-color: violet; */
+}
+
+@media only screen and (max-width: 1156px) {
+  .container {
+    width: calc(128px + 162px + 8px);
+  }
+}

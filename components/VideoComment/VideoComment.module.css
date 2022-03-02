@@ -1,0 +1,71 @@
+.container {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-gap: 10px;
+}
+
+.profilePicContainer {
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.profilePic {
+  transform: scale(0.1);
+}
+.textContainer {
+  font-size: 14px;
+  /* background-color: rgb(39, 39, 39); */
+  height: 20px;
+}
+
+.creatorAndDateContainer {
+  display: flex;
+  align-items: center;
+}
+.date {
+  font-size: 12px;
+  margin-left: 10px;
+  color: rgb(150, 146, 146);
+}
+.comment {
+  margin-top: 2px;
+  /* background-color: rgb(63, 63, 63); */
+  margin-bottom: 0px;
+}
+
+/* -------------------------------------------------------------------------- */
+.likeOrDislikeContainer {
+  /* background-color: rgb(46, 46, 46); */
+  height: 34px;
+  display: flex;
+  align-items: center;
+}
+.thumbsUp,
+.thumbsDown {
+  fill: white;
+  width: 16px;
+}
+
+.thumbsUp {
+  margin-right: 6px;
+}
+.thumbCount {
+  color: rgb(150, 146, 146);
+}
+.thumbsDown {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.reply {
+  color: rgb(150, 146, 146);
+}
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+@media only screen and (max-width: 870px) {
+}

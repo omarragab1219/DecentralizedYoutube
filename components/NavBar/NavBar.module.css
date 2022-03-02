@@ -1,0 +1,269 @@
+.container {
+  height: 56px;
+  width: 100%;
+  background-color: rgba(33, 33, 33, 0.987);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: +10;
+}
+.logoAndTtitleContainer {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: 1rem;
+}
+.YTlogo {
+  display: inline-block;
+  width: 160px;
+  height: 100%;
+}
+.title {
+  position: absolute;
+  left: 3.5rem;
+  white-space: nowrap;
+  font-size: 1.6rem;
+}
+.listContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.li {
+  color: white;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+.line {
+  height: 3px;
+  width: 33px;
+  margin: 3px;
+  background-color: rgb(255, 255, 255);
+}
+
+.searchBarAndButtonContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.searchBarContainer {
+  background-color: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 572px;
+  height: 40px;
+  padding: 1px 2px;
+  border: none;
+  border-left: 1px solid rgb(81, 81, 81);
+  border-top: 1px solid rgb(81, 81, 81);
+  border-bottom: 1px solid rgb(81, 81, 81);
+}
+
+.searchBar {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: white;
+  width: 563px;
+  height: 26px;
+  background-color: #121212;
+  border: none;
+}
+.searchBtn,
+.searchBtnMobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  height: 40px;
+  width: 64px;
+  background-color: #323232;
+  border: none;
+  border-right: 1px solid rgb(81, 81, 81);
+  border-top: 1px solid rgb(81, 81, 81);
+  border-bottom: 1px solid rgb(81, 81, 81);
+}
+.searchBtnSVG,
+.searchBtnSVGMobile {
+  width: 44px;
+  height: 44px;
+}
+/* -------------------------------------------------------------------------- */
+.searchBtnSVG {
+  width: 36px;
+  height: 36px;
+}
+.searchBtnSVGMobile {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+.UploadAndProfileContainer {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translate(0%, -50%);
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background-color: green; */
+}
+.upload {
+  cursor: pointer;
+  background-color: transparent;
+  width: 50px;
+  height: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.uploadSVG {
+  background-color: transparent;
+  width: 44px;
+  height: 44px;
+}
+.notification {
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  width: 44px;
+  height: 44px;
+}
+.profile {
+  padding-left: 6px;
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 2000px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .searchBarContainer {
+    width: 472px;
+    padding: 1px 2px;
+  }
+  .searchBar {
+    width: 463px;
+  }
+}
+
+@media only screen and (max-width: 1058px) {
+  .title {
+    font-size: 1.4rem;
+  }
+  .searchBarContainer {
+    width: 372px;
+  }
+  .searchBar {
+    width: 363px;
+  }
+}
+@media only screen and (max-width: 928px) {
+  .searchBarContainer {
+    width: 272px;
+  }
+  .searchBar {
+    width: 263px;
+  }
+}
+@media only screen and (max-width: 824px) {
+  .searchBarContainer {
+    width: 240px;
+  }
+  .searchBar {
+    width: 230px;
+  }
+}
+@media only screen and (max-width: 790px) {
+  .searchBarContainer {
+    display: none;
+  }
+  .searchBar {
+    display: none;
+  }
+  .searchBtn {
+    display: none;
+  }
+  .searchBtnMobile {
+    display: inline-block;
+  }
+  .UploadAndProfileContainer {
+    right: 1rem;
+    width: 12rem;
+  }
+  .logoAndTtitleContainer {
+    margin-left: 0.6rem;
+  }
+  .YTlogo {
+    width: 140px;
+  }
+  .title {
+    left: 3rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .logoAndTtitleContainer {
+    margin-left: 0.2rem;
+  }
+  .title {
+    font-size: 1.2rem;
+    left: 2.3rem;
+  }
+  .YTlogo {
+    width: 110px;
+  }
+  .hamburger {
+    margin-left: 6px;
+  }
+  .line {
+    height: 2px;
+    margin: 3px;
+    width: 30px;
+  }
+  .UploadAndProfileContainer {
+    /* right: 0.5rem;
+    width: 8rem; */
+  }
+  .searchBtnMobile {
+    transform: scale(0.8);
+  }
+  .upload {
+    width: 28px;
+    transform: scale(1.2);
+    transform: scale(0.6);
+  }
+  .notification {
+    transform: scale(0.6);
+  }
+  .profile {
+  }
+}

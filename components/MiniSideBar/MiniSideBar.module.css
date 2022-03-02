@@ -1,0 +1,46 @@
+.container {
+  background-color: rgb(33, 33, 33);
+  width: 72px;
+  height: 100%;
+  position: fixed;
+  padding-top: 56px;
+  z-index: +1;
+}
+
+.otherPage {
+  display: none;
+}
+
+.homeContainer,
+.exploreContainer,
+.SubscriptionsContainer,
+.libraryContainer {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 10px;
+  padding: 16px 0px 14px;
+}
+
+.homeContainer:hover,
+.exploreContainer:hover,
+.SubscriptionsContainer:hover,
+.libraryContainer:hover {
+  background-color: rgb(54, 53, 53);
+}
+.svg {
+  fill: aliceblue;
+  height: 24px;
+  width: 24px;
+  margin-bottom: 6px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 790px) {
+  .container {
+    display: none;
+  }
+}
